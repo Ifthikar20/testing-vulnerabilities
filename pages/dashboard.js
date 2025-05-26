@@ -16,6 +16,9 @@ export default function Dashboard() {
       router.push('/');
       return;
     }
+    
+    // Store flag1 in localStorage with unique value
+    localStorage.setItem('flag', 'flag_no_1_a8f7d245');
 
     // Vulnerability: Token sent in URL parameter
     axios.get(`/api/account-details?token=${token}`)

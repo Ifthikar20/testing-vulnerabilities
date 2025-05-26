@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Bank Security Challenge</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+        .container {
+            background-color: white;
+            border-radius: 10px;
+            padding: 30px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #2d2d7e;
+            text-align: center;
+            margin-bottom: 25px;
+            border-bottom: 2px solid #5755d9;
+            padding-bottom: 10px;
+        }
+        h2 {
+            color: #3f3f93;
+            margin-top: 30px;
+        }
+        .flag {
+            background-color: #f8f8ff;
+            border-left: 4px solid #5755d9;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 5px;
+        }
+        .flag h3 {
+            margin-top: 0;
+            color: #4b4ba3;
+        }
+        .hint, .vulnerability, .difficulty, .clue {
+            margin: 10px 0;
+        }
+        .hint strong, .vulnerability strong, .difficulty strong, .clue strong {
+            display: inline-block;
+            width: 110px;
+            color: #5755d9;
+        }
+        .format {
+            background-color: #f0f0ff;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 25px 0;
+        }
+        .format code {
+            background-color: #e0e0ff;
+            padding: 3px 5px;
+            border-radius: 3px;
+            font-family: monospace;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 30px;
+            font-size: 0.9em;
+            color: #666;
+        }
+        .difficulty-easy {
+            color: #4caf50;
+        }
+        .difficulty-medium {
+            color: #ff9800;
+        }
+        .difficulty-hard {
+            color: #f44336;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Test Bank Security Challenge</h1>
+        
+        <p>Welcome to the Test Bank Security Challenge! Six security flags are hidden throughout this application. 
+           Each flag reveals a different vulnerability. Can you find them all?</p>
+        
+        <h2>Flag Hints</h2>
+        
+        <div class="flag">
+            <h3>Flag 1 - "The Invisible Ink"</h3>
+            <p class="hint"><strong>Hint:</strong> Not everything you see is visible to the naked eye. Some secrets are hidden in plain sight, invisible until you look at the source.</p>
+            <p class="vulnerability"><strong>Vulnerability:</strong> Information Disclosure</p>
+            <p class="difficulty"><strong>Difficulty:</strong> <span class="difficulty-easy">Easy</span></p>
+            <p class="clue"><strong>Clue:</strong> View the login page's true face to discover what it's hiding beneath the surface.</p>
+        </div>
+        
+        <div class="flag">
+            <h3>Flag 2 - "The Phantom Element"</h3>
+            <p class="hint"><strong>Hint:</strong> Some elements exist but prefer to remain unseen, hiding in the shadows of the DOM.</p>
+            <p class="vulnerability"><strong>Vulnerability:</strong> Hidden Data in DOM</p>
+            <p class="difficulty"><strong>Difficulty:</strong> <span class="difficulty-easy">Easy</span></p>
+            <p class="clue"><strong>Clue:</strong> On the dashboard, there's more than meets the eye. What's hiding in the document's structure?</p>
+        </div>
+        
+        <div class="flag">
+            <h3>Flag 3 - "The Secret Messenger"</h3>
+            <p class="hint"><strong>Hint:</strong> Communication isn't always visible in the conversation. Sometimes messages travel in secret headers.</p>
+            <p class="vulnerability"><strong>Vulnerability:</strong> Information Disclosure in HTTP Headers</p>
+            <p class="difficulty"><strong>Difficulty:</strong> <span class="difficulty-medium">Medium</span></p>
+            <p class="clue"><strong>Clue:</strong> When you authenticate, examine how the server responds. Look beyond the body of the message.</p>
+        </div>
+        
+        <div class="flag">
+            <h3>Flag 4 - "The Privileged Account"</h3>
+            <p class="hint"><strong>Hint:</strong> Some data only reveals itself to those with the right privileges. What you see depends on who you are.</p>
+            <p class="vulnerability"><strong>Vulnerability:</strong> Authorization Vulnerability</p>
+            <p class="difficulty"><strong>Difficulty:</strong> <span class="difficulty-medium">Medium</span></p>
+            <p class="clue"><strong>Clue:</strong> Admin accounts have special access to sensitive information. Can you see what they see?</p>
+        </div>
+        
+        <div class="flag">
+            <h3>Flag 5 - "The Transaction Tracer"</h3>
+            <p class="hint"><strong>Hint:</strong> Financial transactions leave traces. Every operation carries information, sometimes more than intended.</p>
+            <p class="vulnerability"><strong>Vulnerability:</strong> Data Leakage in API Response</p>
+            <p class="difficulty"><strong>Difficulty:</strong> <span class="difficulty-medium">Medium</span></p>
+            <p class="clue"><strong>Clue:</strong> When money moves, examine the details carefully. Sometimes valuable information is sent back with the confirmation.</p>
+        </div>
+        
+        <div class="flag">
+            <h3>Flag 6 - "The Gatekeeper's Secret"</h3>
+            <p class="hint"><strong>Hint:</strong> The gatekeeper guards the admin realm, but whispers a secret password for those who know where to look.</p>
+            <p class="vulnerability"><strong>Vulnerability:</strong> Authentication Bypass</p>
+            <p class="difficulty"><strong>Difficulty:</strong> <span class="difficulty-hard">Hard</span></p>
+            <p class="clue"><strong>Clue:</strong> In the shadows of the admin interface lies a hidden message. Find the right passphrase and the gate will open.</p>
+        </div>
+        
+        <div class="format">
+            <h3>Flag Format</h3>
+            <p>All flags follow the format: <code>flag_no_X_XXXXXXXX</code> where X is a number or alphanumeric string.</p>
+        </div>
+        
+        <div class="footer">
+            <h3>Happy Hunting!</h3>
+            <p>Remember, ethical hacking involves identifying vulnerabilities without causing harm. This exercise is designed to help you understand common web security issues.</p>
+        </div>
+    </div>
+</body>
+</html>
